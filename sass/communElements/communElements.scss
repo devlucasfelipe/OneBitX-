@@ -30,6 +30,7 @@
 
 #button {
   padding: $padding-button;
+  border: 2px solid white;
 }
 
 .footer {
@@ -55,7 +56,37 @@
   }
 }
 
+.downloadDesc {
+  background-color: black;
+  height: 85vh;
+  padding-top: 240px;
+
+  button {
+    border: 2px solid white;
+    margin-right: 10px;
+  }
+}
+
+.emailObc {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+
+  &:hover {
+    border-bottom: 1px solid $link-hover;
+    color: $link-hover;
+  }
+}
+
 // Media query
+
+@media (max-width: 449px) {
+  .downloadDesc {
+    button {
+      margin: 10px 0px;
+    }
+  }
+}
 
 @media (max-width: 405px) {
   .logoPc {
